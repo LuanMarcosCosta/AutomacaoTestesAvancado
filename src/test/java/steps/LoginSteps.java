@@ -58,15 +58,8 @@ public class LoginSteps extends RunCucumber {
 
     @After
     public static void takeScreenshot(Scenario scenario){
-        System.out.println("========================");
-        System.out.println("Teste qsendo executado: " + scenario.getName());
-        System.out.println("Status: " + scenario.getStatus());
-        System.out.println("Tag: " + scenario.getSourceTagNames());
-        System.out.println("========================");
-        if (scenario.isFailed()){
-            // Tira Print dos erros!
             ScreenshotUtils.addScreenshotOnScenario(scenario);
-        }
+
     }
 
 }
