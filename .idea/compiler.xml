@@ -6,9 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="MasterClassQazando" />
         <module name="SeleniumWebdriverQazandoBase" />
+        <module name="AutomacaoTestesAvancado" />
         <module name="projetogitiniciante" />
+        <module name="MasterClassQazando" />
       </profile>
     </annotationProcessing>
   </component>
