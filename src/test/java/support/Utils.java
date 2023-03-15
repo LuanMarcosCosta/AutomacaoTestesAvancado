@@ -3,8 +3,6 @@ package support;
 import java.util.Random;
 import runner.RunCucumber;
 
-import java.util.Random;
-
 public class Utils extends RunCucumber {
 
     static Random random = new Random();
@@ -21,7 +19,7 @@ public class Utils extends RunCucumber {
         return email_init + resultado + email_final;
     }
 
-    public static String geraSenhaRamdom(){
+    public static String getPasswordRandom(){
         String senhaInit = "S3";
         String senhaFinal = "Nh@";
 
@@ -34,7 +32,7 @@ public class Utils extends RunCucumber {
         return senhaInit + resultado + senhaFinal;
     }
 
-    public static String geraNomeRandom(){
+    public static String getNameRandom(){
 
         String[] names = {"Eduardo Lucas da Silva", "Sandra Maria de Jesus", "José Henrrique de Anchieta", "Luciana Marques de Paula", "Fernando Nunes da Rocha",
                 "Lucas Silva Rodrigues", "Maria Antonierta Santos", "Matheus Crause Barcelos", "Lenadro Barreto Martins", "Fernanda Cowskine de Paula"};
@@ -47,7 +45,7 @@ public class Utils extends RunCucumber {
         return names[posicao];
     }
 
-    public static String geraNumeroCelular(boolean comPontos){
+    public static String getPhoneRandom(boolean comPontos){
         String numerosConcatenados;
         //numeros gerados
         String DDD = "27";

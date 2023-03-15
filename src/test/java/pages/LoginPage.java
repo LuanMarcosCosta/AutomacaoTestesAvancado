@@ -16,6 +16,10 @@ public class LoginPage extends RunCucumber {
     private By botaoFazerLogin = By.id("btnLogin");
     private By botaoAcessarCadastro = By.cssSelector(".right_list_fix > li > a > .fa-lock");
 
+    // Checagem de mensagem
+    private By vTituloSucesso = By.id("swal2-title");
+    private By vCampoVazio = By.className("invalid_input");
+
     // ações / funções / métodos
     public void acessarAplicao() {
         getDriver("chrome").get(URL);
@@ -38,11 +42,11 @@ public class LoginPage extends RunCucumber {
     }
 
     public void verificaLoginSucesso(){
-        checkMessage(By.id("swal2-title"), "Login realizado");
+        checkMessage(vTituloSucesso, "Login realizado");
     }
 
     public void verificaCampoVazio(String message){
-        checkMessage(By.className("invalid_input"), message);
+        checkMessage(vCampoVazio, message);
     }
 
     public void acessarTelaCadastro(){
